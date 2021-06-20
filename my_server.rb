@@ -2,7 +2,6 @@ require 'pry'
 
 class MyServer
   def call(env)
-    binding.pry
     return [ 200, {'Content-Type' => 'text/html'}, pretty_response ]
   end
  
